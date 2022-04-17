@@ -1,0 +1,107 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secundary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    margin: 0px auto;
+    width: 90%;
+    overflow: hidden; /*para que lo que se sobresalga del contenedor no se muestre*/
+    padding: 80px 0px;
+    max-width: 1200px;
+}
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.hero{
+    height: 100vh; /*ocupara el 100% del viewport sin importar el tama;o de su padre*/
+    background-image: var(--background), url(../assets/hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*para que la imagen no se estire y se cubra completa*/
+    background-attachment: fixed; /*esto hara que la imagen se mueva cuando hagas scroll*/
+    background-position: center;
+    position: relative;
+}
+
+.hero .container{
+    padding: 0px;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+.nav--footer{
+    font-weight: 300px;
+    justify-content: flex-start;
+}
+
+.nav__items{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__items--cta{
+    border: 1px solid white;
+}
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px); /*100% del viewport menos los 70px que ocupa el menu de navegacion que espicifcamos anteriormente*/
+    color: white;
+    align-items: center;
+}
+
+.hero__texts{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero__title{
+    font-size: 3.2rem;
+}
+
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300px;
+    margin: 15px 0px;
+}
+
+.hero__cta{
+    text-decoration: none;
+    background-color: white;
+    display: inline-block;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    border-radius: 40px;
+    font-size: 1.1rem;
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+}
