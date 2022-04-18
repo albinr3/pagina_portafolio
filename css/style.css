@@ -105,3 +105,63 @@ body{
     width: 100%;
     height: 120px;
 }
+
+/* Presentation */
+
+.presentation{
+    text-align: center;
+    padding-top: 0px;
+}
+
+.presentation__image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /*determina como se rellenara la imagen para que no se vea deformada*/
+    object-position: 20% 30%; /*determina la posicion si mas arriba o abajo*/
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.presentation__cta{
+    display: inline-block;
+    margin-top: 30px; /*como este cta es un elemento a, es un elemento en linea, y el margen no se le aplicara a menos que lo convierta a un elemente inline-block*/
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+
+/* About */
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+    justify-items: center; /*estas dos propiedades alinean todo vertical y horizontal al centro*/
+    align-items: center;
+
+}
+
+.about__img{
+    text-align: center;
+}
+
+.about__img--left{
+    text-align: left;
+}
+
+.about__picture{
+    max-width: 80%;
+}
+
+.about__paragraph{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
