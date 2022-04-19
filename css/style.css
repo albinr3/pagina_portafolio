@@ -240,3 +240,97 @@ body{
 }
 
 /* Testimonials */
+
+.testimony__grid{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 40px;
+     width: 100%;
+}
+
+.testimony__item{
+    background-color: #764ba2;
+    color: white;
+    border-radius: 6px;
+    padding: 30px 25px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.463);
+    width: 95%;
+}
+
+.testimony__person{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.testimony__img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /*determina como se rellenara la imagen para que no se vea deformada*/
+    object-position: top; /*determina la posicion si mas arriba o abajo*/
+    margin-right: 25px;
+    border: 3px solid white;
+}
+
+.testimony__name{
+    font-size: 1.5rem;
+}
+
+.testimony__verification{
+    margin: 10px 0px;
+    color: rgb(249, 193, 89);
+    font-weight: bold;
+}
+
+.testimony__review{
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--color-primary);
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__container-icons{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.footer__icon{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.fa-brands.footer__icon{
+    line-height: 60px;
+}
