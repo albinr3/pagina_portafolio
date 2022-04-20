@@ -334,3 +334,78 @@ body{
 .fa-brands.footer__icon{
     line-height: 60px;
 }
+
+/* Responsive design */
+
+@media screen and (max-width: 800px) {
+    :root{
+        --boton-padding: 18px 40px;
+    }
+
+    .nav{
+        justify-content: space-around;
+    }
+
+    .nav__items{
+        margin-right: 0px;
+    }
+
+    .hero__texts{
+        width: 100%;
+        margin-bottom: 80px;
+
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle{
+        margin: 25px 0px;
+        font-size: 1.5rem;
+    }
+
+    /*About*/
+
+    .presentation__copy{
+        width: 100%;
+        margin: 0px auto;
+        font-size: 1.4rem;
+    }
+
+    .presentation__cta{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+    }
+
+    .container{
+        padding: 40px 0px;
+    }
+
+    .about__img--left{
+        text-align: center;
+    }
+
+    .about__texts:last-child{
+        grid-row: 3/4;
+    }
+
+    .about__paragraph{
+        font-size: 1.2rem;
+    }
+
+    /*Projects*/
+    .projects__grid{
+
+    height: 650px;
+    grid-template-areas: 
+    "img1 img1 img2 img2"
+    "img1 img1 img3 img3"
+    "img4 img4 img5 img5";
+    }
+
+}
