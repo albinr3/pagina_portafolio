@@ -586,6 +586,10 @@ body{
     .nav__items.nav__items--footer{
         padding: 10px;
     }
+
+    .hero__wave{
+        height: 80px;
+    }
     
 
 }
