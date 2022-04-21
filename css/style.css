@@ -503,6 +503,10 @@ body{
         gap: 10px;
     }
 
+    .projects__img{
+        object-position: 30% 37%;
+    }
+
     /* testmonials */
 
     .testimony__item{
