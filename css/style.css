@@ -49,6 +49,14 @@ body{
     align-items: center;
 }
 
+.menu-btn{
+    display: none;
+}
+
+.nav__phone-header{
+    display: none;
+}
+
 .nav--footer{
     font-weight: 300px;
     justify-content: flex-start;
@@ -449,6 +457,48 @@ body{
         
     }
 
+    .hero .nav{
+        display: block;
+
+        justify-content: center;
+        background-color: var(--color-primary);
+        position: absolute; 
+        top: 0px;
+        left: 0px;
+        height: 90%;
+        opacity: 0.9;
+        padding: 15px;
+        transform: translateX(-400px); /*para mover el menu hacia la izquierda en el eje x.*/
+        transition: transform 0.5s ease-in-out; /*para que aparesca suave y salga tambien*/
+        
+    }
+
+    .hero .nav__items{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        font-weight: inherit;
+    }
+
+    .nav__phone-header{
+        padding: 0px 15px 10px 15px;
+    }
+
+    .nav__icon{
+        font-weight: 300;
+        opacity: 0.8;
+    }
+
+    .nav.show{ /*creamos una clase para que cuando se use esta clase el menu aparesca*/
+        transform: translateX(-25px);
+    }
+
+    .menu-btn{
+        display: block;
+        color: white;
+        font-size: 2rem;
+    }
+
     .hero__cta{
         font-weight: 600;
     }
@@ -501,6 +551,7 @@ body{
     .about__picture{
         max-width: 100%;
     }
+
 
     /* projects */
 
