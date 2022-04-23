@@ -15,7 +15,7 @@ function hide_menu(){
     document.querySelector(".nav__close").style.display = "none";
 }
 
-//hide menu when click outside
+//hide menu when click outside metodo #1
 // document.addEventListener('click', (event) => {
 //     const withinBoundaries = event.composedPath().includes(container)
   
@@ -27,6 +27,8 @@ function hide_menu(){
 //         document.querySelector(".nav__close").style.display = "none";
 //     }
 //   });
+
+//hide menu when click outside metodo #2
 document.addEventListener("click", function(event) {
 const isClosest = event.target.closest(".nav");
     

@@ -465,7 +465,7 @@ body{
         position: absolute; 
         top: 0px;
         left: 0px;
-        height: 90%;
+        height: 100%;
         opacity: 0.9;
         padding: 15px;
         transform: translateX(-400px); /*para mover el menu hacia la izquierda en el eje x.*/
@@ -484,9 +484,10 @@ body{
         padding: 0px 15px 10px 15px;
     }
 
-    .nav__icon{
+    .nav__close__icon{
         font-weight: 300;
         opacity: 0.8;
+        font-size: 1.5rem;
     }
 
     .nav.show{ /*creamos una clase para que cuando se use esta clase el menu aparesca*/
@@ -494,6 +495,7 @@ body{
     }
 
     .menu-btn{
+        margin-top: 10px;
         display: block;
         color: white;
         font-size: 2rem;
