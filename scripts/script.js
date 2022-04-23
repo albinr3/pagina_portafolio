@@ -2,7 +2,7 @@ var container = document.querySelector('.nav');
 
 
 document.querySelector(".menu-btn__icon").addEventListener("click", show_menu); 
-document.querySelector(".nav__icon").addEventListener("click", hide_menu);
+document.querySelector(".nav__close__icon").addEventListener("click", hide_menu);
 
 function show_menu(e){
     container.classList.toggle("show");
